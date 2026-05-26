@@ -1,119 +1,132 @@
-import { useState, useEffect } from 'react';
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import profile_avater from '../../assets/profile_avatar.png'
+import { useEffect, useRef } from 'react';
+import { FaStar, FaQuoteLeft } from 'react-icons/fa';
+import profile_avater from '../../assets/profile_avatar.png';
 
-const testimonials = [
+const testimonialsData = [
   {
     quote: "Baabacon delivered our chapel ahead of schedule with exceptional quality and professionalism. Their attention to detail was outstanding.",
     client: "Church of Jesus Christ of Latter-day Saints",
-    position: "Project Committee, Bo",
-    avatar: profile_avater
+    position: "Bo, Sierra Leone",
+    avatar: profile_avater,
+    rating: 5,
   },
   {
-    quote: "The ICU renovation at Connaught Hospital was executed flawlessly. Professional team, excellent communication, and outstanding results.",
+    quote: "The ICU renovation was executed flawlessly. Professional team and outstanding results.",
     client: "Connaught Hospital",
-    position: "Management",
-    avatar: profile_avater
+    position: "Freetown",
+    avatar: profile_avater,
+    rating: 5,
   },
   {
-    quote: "Reliable, honest, and highly skilled. They completed our private residence with top quality workmanship. Highly recommended!",
-    client: "Private Client",
+    quote: "Reliable, honest, and highly skilled. They completed our private residence with top quality workmanship.",
+    client: "Mr. & Mrs. Kamara",
     position: "Freetown",
-    avatar: profile_avater
+    avatar: profile_avater,
+    rating: 5,
+  },
+  {
+    quote: "Excellent service and timely delivery. They truly exceeded our expectations on every level.",
+    client: "Bethel School",
+    position: "New England, Freetown",
+    avatar: profile_avater,
+    rating: 5,
   },
 ];
 
 const Testimonials = () => {
-  const [current, setCurrent] = useState(0);
+  const scrollRef = useRef(null);
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  // Auto-slide every 6 seconds
   useEffect(() => {
-    const interval = setInterval(nextSlide, 6000);
-    return () => clearInterval(interval);
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let animationFrame;
+    let scrollPosition = 0;
+
+    const scroll = () => {
+      scrollPosition += 0.7; // Slightly slower for better readability
+      if (scrollContainer) {
+        scrollContainer.scrollLeft = scrollPosition;
+
+        if (scrollPosition >= scrollContainer.scrollWidth / 2) {
+          scrollPosition = 0;
+        }
+      }
+      animationFrame = requestAnimationFrame(scroll);
+    };
+
+    animationFrame = requestAnimationFrame(scroll);
+
+    return () => cancelAnimationFrame(animationFrame);
   }, []);
 
+  const duplicatedTestimonials = [...testimonialsData, ...testimonialsData];
+
   return (
-    <div className="py-24 bg-gradient-to-br from-gray-50 to-white">
-      <div className="max-w-5xl mx-auto px-6">
+    <div className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 mb-6">
-            <FaQuoteLeft className="text-[#F97316] text-2xl" />
-            <span className="uppercase tracking-widest font-semibold text-sm text-[#1E3A8A]">Client Voices</span>
+          <div className="inline-flex items-center gap-3 bg-[#1E3A8A]/5 text-[#1E3A8A] px-6 py-3 rounded-full mb-6">
+            <FaQuoteLeft className="text-[#F97316]" />
+            <span className="uppercase tracking-widest font-semibold text-sm">TESTIMONIALS</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-[#1E3A8A] tracking-tighter">
             What Our Clients Say
           </h2>
+          <p className="text-gray-600 mt-4 text-lg">Real experiences from real projects</p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative bg-white rounded-3xl shadow-2xl p-10 md:p-16">
-          <div className="min-h-[320px] flex items-center">
-            <div className="text-center transition-all duration-700">
-              {/* Large Quote Icon */}
-              <FaQuoteLeft className="text-[#F97316] text-7xl mx-auto mb-8 opacity-20" />
-
-              {/* Testimonial Quote */}
-              <p className="text-2xl md:text-3xl leading-relaxed text-gray-700 font-light italic max-w-3xl mx-auto">
-                “{testimonials[current].quote}”
-              </p>
-
-              {/* Client Info */}
-              <div className="mt-12 flex flex-col items-center">
-                <img src={testimonials[current].avatar} alt={testimonials[current].client} className="w-16 h-16 bg-linear-to-br from-[#1E3A8A] to-[#F97316] rounded-2xl flex items-center justify-center text-4xl shadow-lg mb-4" />
-                <p className="font-semibold text-xl text-[#1E3A8A]">
-                  {testimonials[current].client}
-                </p>
-                <p className="text-gray-500 mt-1">{testimonials[current].position}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            aria-label="Previous testimonial"
-            className="absolute left-6 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-100 text-[#1E3A8A] p-4 rounded-full shadow-lg transition-all hover:scale-110"
+        {/* Infinite Scrolling Container */}
+        <div className="relative overflow-hidden">
+          <div
+            ref={scrollRef}
+            className="flex gap-8 overflow-x-hidden whitespace-nowrap pb-8"
           >
-            <FaChevronLeft className="text-2xl" />
-          </button>
-
-          <button
-            onClick={nextSlide}
-            aria-label="Next testimonial"
-            className="absolute right-6 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-100 text-[#1E3A8A] p-4 rounded-full shadow-lg transition-all hover:scale-110"
-          >
-            <FaChevronRight className="text-2xl" />
-          </button>
-
-          {/* Progress Dots */}
-          <div className="flex justify-center gap-3 mt-12">
-            {testimonials.map((_, index) => (
-              <button
+            {duplicatedTestimonials.map((testimonial, index) => (
+              <div
                 key={index}
-                onClick={() => setCurrent(index)}
-                aria-label={`Show testimonial ${index + 1}`}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === current
-                    ? 'bg-[#F97316] w-8'
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
+                className="min-w-[380px] bg-white border border-gray-100 rounded-3xl p-9 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+              >
+                {/* Quote Icon */}
+                <FaQuoteLeft className="text-[#F97316] text-5xl opacity-20 mb-6" />
+
+                {/* Testimonial Quote - FIXED OVERFLOW */}
+                <p className="italic text-gray-700 text-[17px] leading-relaxed mb-8 flex-1 line-clamp-6 text-wrap">
+                  “{testimonial.quote}”
+                </p>
+
+                {/* Client Info */}
+                <div className="flex items-center gap-4 mt-auto">
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.client}
+                    className="w-14 h-14 rounded-2xl object-cover border-2 border-white shadow-md"
+                  />
+                  <div className='w-full px-3 overflow-x-auto'>
+                    <p className="font-semibold text-[#1E3A8A] text-sm text-wrap">{testimonial.client}</p>
+                    <p className="text-sm text-gray-500">{testimonial.position}</p>
+                  </div>
+                </div>
+
+                {/* Rating */}
+                <div className="flex text-[#F97316] mt-6">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <FaStar key={i} size={18} />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
+
+          {/* Gradient Fade Edges */}
+          <div className="absolute left-0 top-0 bottom-8 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-8 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
         </div>
 
-        {/* Trust Footer */}
-        <div className="text-center mt-10 text-gray-500 text-sm">
-          Trusted by leading organizations and individuals across Sierra Leone
+        {/* Trust Line */}
+        <div className="text-center mt-12 text-gray-500 font-medium">
+          Trusted by Churches, Hospitals, Schools &amp; Private Clients across Sierra Leone
         </div>
       </div>
     </div>

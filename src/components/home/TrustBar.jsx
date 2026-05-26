@@ -3,44 +3,44 @@ import { MdVerified } from 'react-icons/md';
 
 const TrustBar = () => {
   return (
-    <div className="bg-white py-8 border-b border-gray-100 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 text-center">
+    <div className="bg-white py-12 border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16">
 
           {/* Established */}
           <div className="flex flex-col items-center group">
-            <div className="w-16 h-16 bg-[#1E3A8A]/5 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#1E3A8A]/10 transition-colors">
-              <FaCalendarAlt className="text-4xl text-[#1E3A8A]" />
+            <div className="w-20 h-20 bg-gradient-to-br from-[#1E3A8A]/5 to-[#1E3A8A]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+              <FaCalendarAlt className="text-5xl text-[#1E3A8A]" />
             </div>
-            <p className="text-xs tracking-widest text-gray-500 font-medium">ESTABLISHED</p>
-            <p className="text-4xl font-bold text-[#1E3A8A] mt-1">2014</p>
+            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">ESTABLISHED</p>
+            <p className="text-5xl font-bold text-[#1E3A8A] tracking-tighter">2014</p>
           </div>
 
           {/* Projects Completed */}
           <div className="flex flex-col items-center group">
-            <div className="w-16 h-16 bg-[#F97316]/5 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#F97316]/10 transition-colors">
-              <FaBuilding className="text-4xl text-[#F97316]" />
+            <div className="w-20 h-20 bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+              <FaBuilding className="text-5xl text-[#F97316]" />
             </div>
-            <p className="text-xs tracking-widest text-gray-500 font-medium">PROJECTS COMPLETED</p>
-            <p className="text-4xl font-bold text-[#F97316] mt-1">50+</p>
+            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">PROJECTS COMPLETED</p>
+            <p className="text-5xl font-bold text-[#F97316] tracking-tighter">50+</p>
           </div>
 
           {/* Serving Nationwide */}
           <div className="flex flex-col items-center group">
-            <div className="w-16 h-16 bg-[#1E3A8A]/5 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#1E3A8A]/10 transition-colors">
-              <FaMapMarkerAlt className="text-4xl text-[#1E3A8A]" />
+            <div className="w-20 h-20 bg-gradient-to-br from-[#1E3A8A]/5 to-[#1E3A8A]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+              <FaMapMarkerAlt className="text-5xl text-[#1E3A8A]" />
             </div>
-            <p className="text-xs tracking-widest text-gray-500 font-medium">SERVING</p>
-            <p className="text-4xl font-bold text-[#1E3A8A] mt-1">Nationwide</p>
+            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">SERVING</p>
+            <p className="text-5xl font-bold text-[#1E3A8A] tracking-tighter">Nationwide</p>
           </div>
 
           {/* Quality Assurance */}
           <div className="flex flex-col items-center group">
-            <div className="w-16 h-16 bg-[#F97316]/5 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#F97316]/10 transition-colors">
-              <MdVerified className="text-4xl text-[#F97316]" />
+            <div className="w-20 h-20 bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+              <MdVerified className="text-5xl text-[#F97316]" />
             </div>
-            <p className="text-xs tracking-widest text-gray-500 font-medium">QUALITY ASSURED</p>
-            <p className="text-4xl font-bold text-[#F97316] mt-1">100%</p>
+            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">QUALITY ASSURED</p>
+            <p className="text-5xl font-bold text-[#F97316] tracking-tighter">100%</p>
           </div>
 
         </div>
