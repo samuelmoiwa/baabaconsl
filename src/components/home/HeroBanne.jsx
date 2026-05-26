@@ -65,7 +65,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Scroll Prompt */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70">
+      <div className="absolute bottom-12  left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center text-white/70">
         <div className="text-xs tracking-[3px] mb-2">SCROLL TO DISCOVER</div>
         <div className="w-6 h-10 border-2 border-white/60 rounded-full flex items-center justify-center">
           <div className="w-1 h-2 bg-white rounded-full animate-scroll-down"></div>
