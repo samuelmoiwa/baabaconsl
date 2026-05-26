@@ -143,9 +143,11 @@ const Navbar = () => {
           <div className="mt-12">
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-[#1E3A8A] text-white py-4 rounded-2xl font-semibold text-lg hover:bg-[#172E6B] transition-all"
+              className="w-full bg-[#1E3A8A] text-white py-2 rounded-xl font-semibold text-lg
+              hover:bg-[#172E6B] transition-all flex items-center justify-center gap-3"
             >
-              Get a Quote
+               <FaWhatsapp className="text-xl" />
+                Chat
             </button>
           </div>
         </div>
