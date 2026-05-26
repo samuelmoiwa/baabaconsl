@@ -18,7 +18,7 @@ const HeroBanner = () => {
       {/* Subtle Construction Pattern Overlay */}
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F97316_1px,transparent_1px)] [background-size:60px_60px]"></div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto sm:mt-[2rem] mt-[3rem]">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto sm:mt-[0rem] mt-[3rem]">
         {/* Small Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2 rounded-full mb-6">
           <span className="text-[#F97316] text-xl">🏗️</span>
