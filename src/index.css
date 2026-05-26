@@ -20,3 +20,41 @@ body {
 
 .delay-700 { animation-delay: 700ms; }
 .delay-1000 { animation-delay: 1000ms; }
+
+
+/* nav bar code */
+
+.nav-link {
+  position: relative;
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1E3A8A;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(to right, #1E3A8A, #F97316);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+/* For transparent state text color */
+nav.bg-transparent .nav-link {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav.bg-transparent .nav-link:hover {
+  color: #F97316;
+}
