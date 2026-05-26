@@ -76,20 +76,20 @@ const MissionValues = () => {
           <div>
             <h3 className="text-4xl font-semibold mb-10 text-center lg:text-left">Our Core Values</h3>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 sm:gap-6 gap-4">
               {values.map((value, i) => {
                 const IconComponent = value.icon;
                 return (
                   <div
                     key={i}
-                    className="group bg-white/10 hover:bg-white/15 backdrop-blur-lg border border-white/10 hover:border-[#F97316] p-8 rounded-3xl transition-all duration-500 hover:-translate-y-2"
+                    className="group bg-white/10 hover:bg-white/15 backdrop-blur-lg border border-white/10 hover:border-[#F97316] sm:p-8 p-4 rounded-3xl transition-all duration-500 hover:-translate-y-2"
                   >
                     <div className="w-14 h-14 bg-white/10 group-hover:bg-[#F97316] rounded-2xl flex items-center justify-center mb-6 transition-all">
                       <IconComponent className="text-3xl text-white group-hover:text-white" />
                     </div>
 
-                    <h4 className="text-2xl font-semibold mb-3">{value.title}</h4>
-                    <p className="text-white/70 text-[15px] leading-relaxed">
+                    <h4 className="sm:text-2xl text-lg font-semibold mb-3">{value.title}</h4>
+                    <p className="text-white/70 sm:text-[15px] text-[13px] leading-relaxed">
                       {value.desc}
                     </p>
                   </div>
