@@ -23,7 +23,6 @@ body {
 
 
 /* nav bar code */
-
 .nav-link {
   position: relative;
   color: #374151;
@@ -57,4 +56,28 @@ nav.bg-transparent .nav-link {
 
 nav.bg-transparent .nav-link:hover {
   color: #F97316;
+}
+
+/* home banner code */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+@keyframes scroll-down {
+  0% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(8px); }
+  100% { transform: translateY(0); opacity: 0.4; }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 1.8s infinite;
 }
