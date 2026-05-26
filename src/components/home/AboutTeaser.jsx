@@ -42,7 +42,8 @@ const AboutTeaser = () => {
               </div>
             </div>
 
-            <button className="group mt-6 bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-10 py-5 rounded-3xl font-semibold text-lg transition-all duration-300 flex items-center gap-3 hover:shadow-xl hover:shadow-[#1E3A8A]/30">
+            <button className="group mt-6 bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-10 py-5 rounded-3xl hover:cursor-pointer
+            font-semibold text-lg transition-all duration-300 flex items-center gap-3 hover:shadow-xl hover:shadow-[#1E3A8A]/30">
               Learn Our Full Story
               <span className="group-hover:translate-x-2 transition-transform">→</span>
             </button>

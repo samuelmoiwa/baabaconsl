@@ -27,7 +27,8 @@ const TrustBar = () => {
 
           {/* Serving Nationwide */}
           <div className="flex flex-col items-center group">
-            <div className="w-20 h-20 bg-gradient-to-br from-[#1E3A8A]/5 to-[#1E3A8A]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+            <div className="w-20 h-20 bg-gradient-to-br from-[#1E3A8A]/5 to-[#1E3A8A]/10 rounded-3xl flex
+            items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <FaMapMarkerAlt className="text-5xl text-[#1E3A8A]" />
             </div>
             <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">SERVING</p>
@@ -36,7 +37,8 @@ const TrustBar = () => {
 
           {/* Quality Assurance */}
           <div className="flex flex-col items-center group">
-            <div className="w-20 h-20 bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
+            <div className="w-20 h-20 bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 rounded-3xl flex items-center
+            justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <MdVerified className="text-5xl text-[#F97316]" />
             </div>
             <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">QUALITY ASSURED</p>

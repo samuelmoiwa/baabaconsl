@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,8 +71,10 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-9 py-3.5 rounded-2xl font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-[#1E3A8A]/40 active:scale-95">
-              Get a Quote
+            <button className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-9 py-3.5 rounded-xl flex flex-row text-sm
+            font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-[#1E3A8A]/40 active:scale-95 gap-2 hover:cursor-pointer">
+                <FaWhatsapp className="text-xl" />
+                Chat
             </button>
           </div>
 

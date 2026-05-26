@@ -41,12 +41,15 @@ const HeroBanner = () => {
 
         {/* CTA Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="group bg-[#F97316] hover:bg-[#EA580C] text-white px-12 py-5 rounded-3xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-2xl shadow-[#F97316]/50 flex items-center gap-3">
+          <button className="group bg-[#F97316] hover:bg-[#EA580C] text-white px-12 py-5 rounded-3xl text-lg
+            font-semibold transition-all duration-300 hover:scale-105 shadow-2xl shadow-[#F97316]/50 flex items-center
+            gap-3 hover:cursor-pointer">
             Get a Free Quote
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </button>
 
-          <button className="border-2 border-white/80 hover:border-white text-white px-10 py-5 rounded-3xl text-lg font-semibold transition-all hover:bg-white/10 backdrop-blur-sm">
+          <button className="border-2 border-white/80 hover:border-white text-white px-10 py-5 rounded-3xl text-lg
+          font-semibold transition-all hover:bg-white/10 backdrop-blur-sm hover:cursor-pointer">
             Explore Our Projects
           </button>
         </div>
