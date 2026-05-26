@@ -12,8 +12,8 @@ const TrustBar = () => {
             <div className="w-20 h-20 bg-gradient-to-br from-[#1E3A8A]/5 to-[#1E3A8A]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <FaCalendarAlt className="text-5xl text-[#1E3A8A]" />
             </div>
-            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">ESTABLISHED</p>
-            <p className="text-5xl font-bold text-[#1E3A8A] tracking-tighter">2014</p>
+            <p className="sm:text-xs text-xs tracking-[2px] text-gray-500 font-semibold mb-1">ESTABLISHED</p>
+            <p className="sm:text-5xl text-2xl font-bold text-[#1E3A8A] tracking-tighter">2014</p>
           </div>
 
           {/* Projects Completed */}
@@ -21,8 +21,8 @@ const TrustBar = () => {
             <div className="w-20 h-20 bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <FaBuilding className="text-5xl text-[#F97316]" />
             </div>
-            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">PROJECTS COMPLETED</p>
-            <p className="text-5xl font-bold text-[#F97316] tracking-tighter">50+</p>
+            <p className="sm:text-xs text-xs tracking-[2px] text-gray-500 font-semibold text-center mb-1">PROJECTS COMPLETED</p>
+            <p className="sm:text-5xl text-2xl font-bold text-[#F97316] tracking-tighter">50+</p>
           </div>
 
           {/* Serving Nationwide */}
@@ -31,8 +31,8 @@ const TrustBar = () => {
             items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <FaMapMarkerAlt className="text-5xl text-[#1E3A8A]" />
             </div>
-            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">SERVING</p>
-            <p className="text-5xl font-bold text-[#1E3A8A] tracking-tighter">Nationwide</p>
+            <p className="sm:text-xs text-xs tracking-[2px] text-gray-500 font-semibold mb-1">SERVING</p>
+            <p className="sm:text-5xl text-2xl font-bold text-[#1E3A8A] tracking-tighter">Nationwide</p>
           </div>
 
           {/* Quality Assurance */}
@@ -41,8 +41,8 @@ const TrustBar = () => {
             justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-inner">
               <MdVerified className="text-5xl text-[#F97316]" />
             </div>
-            <p className="text-xs tracking-[2px] text-gray-500 font-semibold mb-1">QUALITY ASSURED</p>
-            <p className="text-5xl font-bold text-[#F97316] tracking-tighter">100%</p>
+            <p className="sm:text-xs text-xs tracking-[2px] text-gray-500 font-semibold mb-1">QUALITY ASSURED</p>
+            <p className="sm:text-5xl text-2xl font-bold text-[#F97316] tracking-tighter">100%</p>
           </div>
 
         </div>

@@ -3,7 +3,7 @@ import { FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa';
 
 const AboutTeaser = () => {
   return (
-    <div className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <div className="sm:py-24 py-10 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
 

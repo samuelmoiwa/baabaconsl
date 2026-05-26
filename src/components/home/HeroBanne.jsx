@@ -55,7 +55,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="flex flex-wrap justify-center gap-8 mt-16 text-white/80 text-sm">
+        <div className="flex flex-wrap justify-center sm:gap-8 gap-4 mt-16 text-white/80 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-[#F97316] rounded-full animate-pulse"></div>
             <span>50+ Projects Completed</span>
