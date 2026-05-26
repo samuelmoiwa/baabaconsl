@@ -2,7 +2,7 @@ import { FaArrowRight, FaPhone, FaWhatsapp } from 'react-icons/fa';
 
 const CallToAction = () => {
   return (
-    <div className="py-28 bg-white relative overflow-hidden">
+    <div className="sm:py-28 py-10 bg-white relative overflow-hidden">
       {/* Subtle Background Accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/5 to-transparent"></div>
 
@@ -23,15 +23,15 @@ const CallToAction = () => {
 
         {/* CTA Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="group bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl text-lg
-          font-semibold transition-all duration-300 flex items-center gap-3 shadow-xl shadow-[#1E3A8A]/30
+          <button className="group bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl sm:text-lg
+          text-sm font-semibold transition-all duration-300 flex items-center gap-3 shadow-xl shadow-[#1E3A8A]/30
           hover:shadow-xl hover:cursor-pointer hover:-translate-y-1">
             Request a Free Consultation
             <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
 
           <button className="group border-2 border-[#F97316] text-[#F97316] hover:bg-[#F97316]
-          hover:text-white px-10 py-5 rounded-3xl text-lg font-semibold transition-all duration-300 flex
+          hover:text-white px-10 py-5 rounded-3xl sm:text-lg text-sm font-semibold transition-all duration-300 flex
           items-center gap-3 hover:cursor-pointer">
             <FaWhatsapp className="text-xl" />
             Chat on WhatsApp
