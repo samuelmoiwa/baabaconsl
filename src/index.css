@@ -81,3 +81,28 @@ nav.bg-transparent .nav-link:hover {
 .animate-scroll-down {
   animation: scroll-down 1.8s infinite;
 }
+
+
+/* aboutHero code */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+@keyframes scroll-down {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 2s infinite;
+}
