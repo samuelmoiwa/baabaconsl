@@ -16,7 +16,7 @@ const CompanyOverview = () => {
 
           {/* Left Side - Lottie Animation */}
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-sm bg-gray-50 p-6 min-h-[450px] flex items-center justify-center">
+            <div className="rounded-3xl overflow-hidden bg-gray-50 p-6 min-h-[450px] flex items-center justify-center">
               <Player
                 autoplay
                 loop
