@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { FaTimes, FaWhatsapp } from 'react-icons/fa';
+// import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,6 +42,7 @@ const Navbar = () => {
             <div className="w-11 h-11 bg-[#1E3A8A] rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
               <span className="text-white text-3xl font-bold">B</span>
             </div>
+            {/* <img src={logo} alt="Baabacon Logo" className="w-20 h-20 object-contain" /> */}
             <div>
               <h1 className="text-2xl font-bold tracking-tighter text-[#1E3A8A]">
                 BAABACON
