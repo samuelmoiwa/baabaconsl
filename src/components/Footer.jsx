@@ -14,7 +14,7 @@ const Footer = () => {
 
           {/* Column 1: Company Info */}
           <div>
-            <div className="flex items-center justify-center gap-3 mb-4 bg-amber-50 w-[12rem]">
+            <div className="flex items-center justify-center gap-3 mb-4 bg-white w-[12rem]">
               {/* <div className="w-14 h-14 bg-[#1E3A8A] rounded-2xl flex items-center justify-center">
                 <span className="text-white text-4xl font-bold">B</span>
               </div>

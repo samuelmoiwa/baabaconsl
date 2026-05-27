@@ -1,3 +1,4 @@
+import AboutGallery from "../components/about/AboutGallery"
 import AboutHero from "../components/about/AboutHero"
 import CompanyOverview from "../components/about/CompanyOverview"
 import CompanyStatistics from "../components/about/CompanyStatistics"
@@ -19,6 +20,7 @@ const AboutPage = () => {
         <CoreValues />
         <OurTeam />
         <CompanyStatistics />
+        <AboutGallery />
     </>
   )
 }
