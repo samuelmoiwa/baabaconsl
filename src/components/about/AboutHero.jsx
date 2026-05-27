@@ -2,7 +2,7 @@ import aboutBanner from '../../images/construction_workers_1.png';
 
 const AboutHero = () => {
   return (
-    <div className="relative h-[40vh] flex items-center justify-center overflow-hidden">
+    <div className="relative sm:h-[40vh] py-10 w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

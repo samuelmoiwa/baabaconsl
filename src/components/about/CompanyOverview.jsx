@@ -10,13 +10,13 @@ import construction from '../../lottiefiles/construction.json';
 
 const CompanyOverview = () => {
   return (
-    <div className="py-24 bg-white">
+    <div className="sm:py-24 py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* Left Side - Lottie Animation */}
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden bg-gray-50 p-6 min-h-[450px] flex items-center justify-center">
+            <div className="rounded-3xl overflow-hidden bg-gray-50 p-6 sm:min-h-[450px] flex items-center justify-center">
               <Player
                 autoplay
                 loop

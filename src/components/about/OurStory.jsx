@@ -2,7 +2,7 @@ import { FaCalendarAlt, FaUsers, FaChartLine, FaHandshake } from 'react-icons/fa
 
 const OurStory = () => {
   return (
-    <div className="py-24 bg-gray-50">
+    <div className="sm:py-24 py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 

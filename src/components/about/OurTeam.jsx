@@ -33,7 +33,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 via-[#1E3A8A] to-slate-900 animate-gradient-slow relative overflow-hidden">
+    <section className="sm:py-24 py-10 bg-gradient-to-br from-gray-900 via-[#1E3A8A] to-slate-900 animate-gradient-slow relative overflow-hidden">
 
       {/* Decorative Technical Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:24px_24px] opacity-70 pointer-events-none"></div>

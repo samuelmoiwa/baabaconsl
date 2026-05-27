@@ -2,7 +2,7 @@ import { FaBullseye, FaTrophy, FaGlobe } from 'react-icons/fa';
 
 const MissionStatement = () => {
   return (
-    <div className="py-24 bg-gradient-to-br from-[#1E3A8A] via-[#172E6B] to-[#0F172A] text-white relative overflow-hidden">
+    <div className="sm:py-24 py-10 bg-gradient-to-br from-[#1E3A8A] via-[#172E6B] to-[#0F172A] text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(#F97316_1px,transparent_1px)] [background-size:50px_50px] opacity-10"></div>
 

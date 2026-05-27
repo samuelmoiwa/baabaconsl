@@ -33,7 +33,7 @@ const milestones = [
 
 const KeyMilestones = () => {
   return (
-    <div className="py-24 bg-white">
+    <div className="sm:py-24 py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">

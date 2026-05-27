@@ -42,7 +42,7 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <div className="py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <div className="sm:py-28 py-10 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute inset-0 bg-[radial-gradient(#1E3A8A_0.8px,transparent_1px)] [background-size:40px_40px] opacity-5"></div>
 
