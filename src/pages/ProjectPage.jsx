@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ProjectHero from './components/projects/ProjectHero';
-import ProjectCard from './components/ProjectCard';
-import ProjectSpecPanel from './components/ProjectSpecPanel';
+import ProjectHero from '../components/projects/ProjectHero';
+import ProjectCard from '../components/projects/ProjectCard';
+import ProjectSpecPanel from '../components/projects/ProjectSpecPanel';
 
 const projectData = [
   {
@@ -65,7 +65,7 @@ const ProjectsPage = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-16 relative">
+    <div className="min-h-screen relative">
       {/* 1. High-Contrast Project Hero Showcase */}
       <ProjectHero />
 
