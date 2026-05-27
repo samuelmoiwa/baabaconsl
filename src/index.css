@@ -106,3 +106,15 @@ nav.bg-transparent .nav-link:hover {
 .animate-scroll-down {
   animation: scroll-down 2s infinite;
 }
+
+/* our team code */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-slow {
+  background-size: 200% 200%;
+  animation: gradient-move 15s ease infinite;
+}
