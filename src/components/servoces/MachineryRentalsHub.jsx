@@ -1,4 +1,4 @@
-import { FaCogs, FaTools } from 'react-icons/fa';
+import {  FaTools } from 'react-icons/fa';
 
 const machineryItems = [
   {
