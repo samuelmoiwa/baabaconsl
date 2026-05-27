@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router';
 import _1 from '../../images/3.jpeg';
 import _2 from '../../images/4.jpeg';
 import _3 from '../../images/5.jpeg';
 import { FaArrowRight, FaLocationDot } from 'react-icons/fa6';
 
 const FeaturedProjects = () => {
+
+  const navigate = useNavigate();
+
   const projects = [
     {
       title: "Connaught Hospital ICU Renovation",
@@ -45,7 +49,9 @@ const FeaturedProjects = () => {
             </p>
           </div>
 
-          <button className="mt-6 md:mt-0 group flex items-center gap-3 text-[#1E3A8A] font-semibold
+          <button
+            onClick={() => navigate('/projects')}
+          className="mt-6 md:mt-0 group flex items-center gap-3 text-[#1E3A8A] font-semibold
           hover:text-[#F97316] transition-colors hover:cursor-pointer">
             View All Projects
             <FaArrowRight className="group-hover:translate-x-1 transition-transform" />

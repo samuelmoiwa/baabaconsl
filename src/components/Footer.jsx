@@ -14,7 +14,7 @@ const Footer = () => {
 
           {/* Column 1: Company Info */}
           <div>
-            <div className="flex items-center justify-center gap-3 mb-6 bg-amber-50">
+            <div className="flex items-center justify-center gap-3 mb-4 bg-amber-50 w-[12rem]">
               {/* <div className="w-14 h-14 bg-[#1E3A8A] rounded-2xl flex items-center justify-center">
                 <span className="text-white text-4xl font-bold">B</span>
               </div>
@@ -22,7 +22,7 @@ const Footer = () => {
                 <h2 className="text-3xl font-bold text-white tracking-tighter">BAABACON</h2>
                 <p className="text-[#F97316] text-sm font-semibold tracking-widest">SL LIMITED</p>
               </div> */}
-              <img src={logo} alt="Baabacon Logo" className="w-[13rem] h-[13rem]  object-contain" />
+              <img src={logo} alt="Baabacon Logo" className="w-full h-full  object-contain" />
             </div>
 
             <p className="text-gray-400 leading-relaxed text-[15.5px] pr-6">

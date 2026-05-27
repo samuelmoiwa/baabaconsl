@@ -16,10 +16,14 @@ const HomePage = () => {
       <AboutTeaser />
       <ServicesOverview />
       <WhyChooseUs />
-      <FeaturedProjects />
+      <div id="projects">
+        <FeaturedProjects />
+      </div>
       <Testimonials />
       <MissionValues />
-      <CallToAction />
+      <div id="contact">
+        <CallToAction />
+      </div>
     </div>
   )
 }
