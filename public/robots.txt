@@ -1,0 +1,24 @@
+# Robots file for Baaba Construction & Services
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.git
+Disallow: /node_modules/
+Disallow: /build/
+Disallow: /dist/
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional - in seconds)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://baabaconsl.com/sitemap.xml

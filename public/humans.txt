@@ -1,0 +1,14 @@
+/* TEAM */
+Company: Baaba Construction & Services
+Website: https://baabaconsl.com
+Location: Sierra Leone, West Africa
+
+/* SITE */
+Language: English
+Charset: UTF-8
+Standards: HTML5, CSS3
+Components: React, Vite, Tailwind CSS
+Updated: 2026-05-27
+
+/* THANKS */
+Thanks for visiting our website!
