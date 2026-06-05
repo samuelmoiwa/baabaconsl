@@ -1,13 +1,13 @@
-import banner_image from '../../images/1.jpeg';
+import logo from '../../assets/logo.png';
 
 const HeroBanner = () => {
   return (
-    <div className="relative sm:h-screen sm:py-0 py-10 flex items-center justify-center overflow-hidden">
+    <div className="relative sm:h-screen sm:py-0 py-10 flex items-center justify-center overflow-hidden bg-white">
       {/* Background Image with Enhanced Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+        className="absolute inset-0 bg-center bg-no-repeat scale-105"
         style={{
-          backgroundImage: `url(${banner_image})`
+          backgroundImage: `url(${logo})`
         }}
       >
         {/* Multi-layer Gradient Overlay */}
