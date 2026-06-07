@@ -21,30 +21,42 @@ const CallToAction = () => {
           Let’s bring your vision to life.
         </p>
 
-        {/* CTA Buttons */}
+        {/* CTA Action Routing Anchors */}
         <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="group bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl sm:text-lg
-          text-sm font-semibold transition-all duration-300 flex items-center gap-3 shadow-xl shadow-[#1E3A8A]/30
-          hover:shadow-xl hover:cursor-pointer hover:-translate-y-1">
+          {/* Direct Phone Dialer Trigger Link */}
+          <a
+            href="tel:+23278661031"
+            className="group bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl sm:text-lg
+            text-sm font-semibold transition-all duration-300 flex items-center gap-3 shadow-xl shadow-[#1E3A8A]/30
+            hover:shadow-xl hover:cursor-pointer hover:-translate-y-1 text-center"
+          >
             Request a Free Consultation
             <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
 
-          <button className="group border-2 border-[#F97316] text-[#F97316] hover:bg-[#F97316]
-          hover:text-white px-10 py-5 rounded-3xl sm:text-lg text-sm font-semibold transition-all duration-300 flex
-          items-center gap-3 hover:cursor-pointer">
+          {/* WhatsApp Deep Link Core Implementation */}
+          <a
+            href="https://wa.me/23276136564"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group border-2 border-[#F97316] text-[#F97316] hover:bg-[#F97316]
+            hover:text-white px-10 py-5 rounded-3xl sm:text-lg text-sm font-semibold transition-all duration-300 flex
+            items-center gap-3 hover:cursor-pointer text-center"
+          >
             <FaWhatsapp className="text-xl" />
             Chat on WhatsApp
-          </button>
+          </a>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact Info Footer Grid */}
         <div className="mt-16 flex flex-col md:flex-row justify-center items-center gap-8 text-gray-600">
           <div className="flex items-center gap-3">
             <FaPhone className="text-[#F97316]" />
             <div>
               <p className="text-sm">Call Us</p>
-              <p className="font-semibold text-[#1E3A8A]">+232 78 661 031</p>
+              <a href="tel:+23278661031" className="font-semibold text-[#1E3A8A] hover:text-[#F97316] transition-colors">
+                +232 78 661 031
+              </a>
             </div>
           </div>
 
