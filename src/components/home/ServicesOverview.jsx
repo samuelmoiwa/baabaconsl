@@ -107,7 +107,9 @@ const ServicesOverview = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl font-semibold
+          <button
+            onClick={() => window.location.href = '/services'}
+          className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-12 py-5 rounded-3xl font-semibold
           text-lg transition-all duration-300 shadow-lg shadow-[#1E3A8A]/30 hover:shadow-xl hover:cursor-pointer">
             View All Services
           </button>
