@@ -73,11 +73,15 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-9 py-3.5 rounded-xl flex flex-row text-sm
+            <a
+            href="https://wa.me/23276136564"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#1E3A8A] hover:bg-[#172E6B] text-white px-9 py-3.5 rounded-xl flex flex-row text-sm
             font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-[#1E3A8A]/40 active:scale-95 gap-2 hover:cursor-pointer">
                 <FaWhatsapp className="text-xl" />
                 Chat
-            </button>
+            </a>
           </div>
 
           {/* Animated Hamburger Button */}
@@ -143,14 +147,17 @@ const Navbar = () => {
           </div>
 
           <div className="mt-12">
-            <button
+            <a
+             href="https://wa.me/23276136564"
+            target="_blank"
+            rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full bg-[#1E3A8A] text-white py-2 rounded-xl font-semibold text-lg
               hover:bg-[#172E6B] transition-all flex items-center justify-center gap-3"
             >
                <FaWhatsapp className="text-xl" />
                 Chat
-            </button>
+            </a>
           </div>
         </div>
       </div>
