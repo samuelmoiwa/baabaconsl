@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router';
 import _1 from '../../images/3.jpeg';
-import _2 from '../../images/4.jpeg';
+import _2 from '../../images/11.jpeg';
 import _3 from '../../images/5.jpeg';
 import { FaArrowRight, FaLocationDot } from 'react-icons/fa6';
 
