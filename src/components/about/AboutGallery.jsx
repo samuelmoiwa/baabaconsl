@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FaBuilding, FaChurch, FaWater, FaDraftingCompass, FaEye } from 'react-icons/fa';
 
-import _1 from '../../images/6.jpeg'
-import _2 from '../../images/7.jpeg'
+import _1 from '../../images/10.jpeg'
+import _2 from '../../images/11.jpeg'
 import _3 from '../../images/8.jpeg'
 import _4 from '../../images/construction_workers_1.png'
 
