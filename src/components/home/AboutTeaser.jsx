@@ -1,4 +1,4 @@
-import image_about from '../../images/2.jpeg';
+import image_about from '../../images/9.jpeg';
 import { FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa';
 
 const AboutTeaser = () => {
