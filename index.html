@@ -2,7 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Favicons (SVG primary, ICO + PNG fallbacks for broader browser/crawler support) -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="google-site-verification" content="-nlbvwxT7Nek5ABWkUtR1DT3G7rjXxB4tgEPndi3VtU" />
@@ -38,6 +45,28 @@
     <!-- Mobile App Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Baaba Construction & Services",
+      "alternateName": "Baabacon SL Limited",
+      "url": "https://baabaconsl.com",
+      "logo": "https://baabaconsl.com/favicon.svg",
+      "image": "https://baabaconsl.com/og-image.jpg",
+      "description": "Baaba Construction & Services offers professional construction, machinery rentals, and manufacturing solutions in Sierra Leone.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SL",
+        "addressLocality": "Freetown"
+      },
+      "areaServed": "Sierra Leone",
+      "priceRange": "$$",
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
