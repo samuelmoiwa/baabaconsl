@@ -117,7 +117,8 @@ const HeroBanner = () => {
           <div className="absolute -top-4 right-6 bg-slate-950/90 border border-white/10 p-3 rounded-xl text-[#F97316] text-lg shadow-xl animate-float pointer-events-none hidden sm:block">
             <FaHardHat />
           </div>
-          <div className="absolute bottom-4 -left-6 bg-slate-950/90 border border-white/10 p-3 rounded-xl text-[#1E3A8A] text-lg shadow-xl animate-float [animation-delay:1.5s] pointer-events-none hidden sm:block">
+          <div className="absolute bottom-4 -left-6 bg-slate-950/90 border border-white/10 p-3 rounded-xl
+            text-[#1E3A8A] text-lg shadow-xl animate-float [animation-delay:1.5s] pointer-events-none hidden sm:block">
             <FaCube />
           </div>
         </div>
