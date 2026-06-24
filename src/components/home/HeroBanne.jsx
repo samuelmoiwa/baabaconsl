@@ -99,7 +99,8 @@ const HeroBanner = () => {
             <div className="absolute inset-0 bg-[radial-gradient(#ffffff04_1px,transparent_1px)] bg-[size:16px_16px]"></div>
 
             {/* Moving Scanner Laser Bar Accent Effect */}
-            <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-[#F97316]/30 to-transparent top-0 animate-[scan_4s_infinite_linear]"></div>
+            <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-[#F97316]/30
+            to-transparent top-0 animate-[scan_4s_infinite_linear]"></div>
 
             {/* The Logo Graphic Element Asset */}
             <img
