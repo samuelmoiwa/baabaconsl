@@ -131,7 +131,6 @@ const HeroBanner = () => {
           <div className="w-1 h-1.5 bg-[#F97316] rounded-full animate-[bounce_1.5s_infinite]"></div>
         </div>
       </div>
-      
     </div>
   );
 };
