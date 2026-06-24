@@ -20,7 +20,8 @@ const HeroBanner = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-slate-950/80 to-transparent lg:block hidden"></div>
 
         {/* Top-to-Bottom/Diagonal premium color grading fallback */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/20 via-[#1E3A8A]/10 to-slate-900/20 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/20 via-[#1E3A8A]/10
+        to-slate-900/20 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/10 via-transparent to-slate-950/10"></div>
       </div>
 
