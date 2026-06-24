@@ -64,7 +64,8 @@ const HeroBanner = () => {
             <a
               href="#contact"
               className="group bg-[#F97316] hover:bg-[#EA580C] text-white px-10 py-4.5 rounded-2xl text-sm
-              font-black uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-[#F97316]/20 flex items-center justify-center gap-3"
+              font-black uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 shadow-xl
+              shadow-[#F97316]/20 flex items-center justify-center gap-3"
             >
               Get a Free Quote
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
