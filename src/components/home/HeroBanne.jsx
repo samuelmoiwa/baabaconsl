@@ -38,7 +38,8 @@ const HeroBanner = () => {
         <div className="lg:col-span-7 space-y-8 text-left">
 
           {/* Small Specialized Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-slate-950/60 backdrop-blur-xl border border-white/10 px-5 py-2 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+          <div className="inline-flex items-center gap-2.5 bg-slate-950/60 backdrop-blur-xl border border-white/10
+          px-5 py-2 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
             <span className="text-[#F97316] text-sm animate-bounce">🏗️</span>
             <span className="text-slate-300 font-bold tracking-widest text-xs uppercase">
               EST. 2014 • SIERRA LEONE GRID
