@@ -72,7 +72,8 @@ const HeroBanner = () => {
             <a
               href="#projects"
               className="border border-white/10 hover:border-white/20 bg-slate-950/40 hover:bg-white/[0.06]
-              text-white px-9 py-4.5 rounded-2xl text-sm font-black uppercase tracking-wider transition-all duration-300 backdrop-blur-md flex items-center justify-center"
+              text-white px-9 py-4.5 rounded-2xl text-sm font-black uppercase tracking-wider transition-all
+              duration-300 backdrop-blur-md flex items-center justify-center"
             >
               Explore Our Projects
             </a>
