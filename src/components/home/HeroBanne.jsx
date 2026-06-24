@@ -71,14 +71,16 @@ const HeroBanner = () => {
 
             <a
               href="#projects"
-              className="border border-white/10 hover:border-white/20 bg-slate-950/40 hover:bg-white/[0.06] text-white px-9 py-4.5 rounded-2xl text-sm font-black uppercase tracking-wider transition-all duration-300 backdrop-blur-md flex items-center justify-center"
+              className="border border-white/10 hover:border-white/20 bg-slate-950/40 hover:bg-white/[0.06]
+              text-white px-9 py-4.5 rounded-2xl text-sm font-black uppercase tracking-wider transition-all duration-300 backdrop-blur-md flex items-center justify-center"
             >
               Explore Our Projects
             </a>
           </div>
 
           {/* Trust Indicators Footer Sub-Grid */}
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-white/10 text-slate-400 text-xs font-bold">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-white/10 text-slate-400
+          text-xs font-bold">
             <div className="flex items-center gap-2.5">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
               <span className="text-slate-200">50+ Mega Structural Projects Delivered</span>
