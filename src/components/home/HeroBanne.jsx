@@ -105,7 +105,8 @@ const HeroBanner = () => {
             <img
               src={logo}
               alt="Baabacon SL Limited Corporate Signage"
-              className="w-4/5 h-auto object-contain relative z-10 transition-transform duration-700 group-hover/logo:scale-[1.03] filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]"
+              className="w-4/5 h-auto object-contain relative z-10 transition-transform duration-700
+              group-hover/logo:scale-[1.03] filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]"
             />
 
             {/* Ambient Highlight Corners */}
