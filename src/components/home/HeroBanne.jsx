@@ -125,7 +125,8 @@ const HeroBanner = () => {
       </div>
 
       {/* 4. Downward Scroll Discovery Prompt */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center text-slate-400 opacity-80 hover:opacity-100 transition-opacity pointer-events-none z-10">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center text-slate-400
+        opacity-80 hover:opacity-100 transition-opacity pointer-events-none z-10">
         <div className="text-[10px] font-black tracking-[4px] uppercase mb-2">Scroll To Discover</div>
         <div className="w-5 h-8 border-2 border-slate-600 rounded-full flex justify-center p-1">
           <div className="w-1 h-1.5 bg-[#F97316] rounded-full animate-[bounce_1.5s_infinite]"></div>
