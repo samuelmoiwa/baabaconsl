@@ -93,7 +93,8 @@ const HeroBanner = () => {
         <div className="lg:col-span-5 relative flex justify-center items-center">
 
           {/* Aesthetic Blueprint Wrapper Ring (Switched back to transparent backdrop overlay for contrast) */}
-          <div className="relative w-full aspect-square max-w-[420px] bg-white border border-white/10 rounded-[2.5rem] p-8 flex items-center justify-center shadow-2xl backdrop-blur-md overflow-hidden group/logo">
+          <div className="relative w-full aspect-square max-w-[420px] bg-white border border-white/10
+          rounded-[2.5rem] p-8 flex items-center justify-center shadow-2xl backdrop-blur-md overflow-hidden group/logo">
 
             {/* Embedded Micro Drafting Grid lines behind the asset */}
             <div className="absolute inset-0 bg-[radial-gradient(#ffffff04_1px,transparent_1px)] bg-[size:16px_16px]"></div>
